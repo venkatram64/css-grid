@@ -10,58 +10,36 @@
       }
       #content {
         display: grid;
-        grid-template-columns: repeat(12,1fr);
-        grid-auto-rows: minmax(100px,auto);
+        grid-template-columns: repeat(6,1fr);
+        grid-auto-columns: minmax(150px, auto);
         grid-gap: 10px;
         max-width: 960px;
         margin: 0 auto;
       }
 
-      #content > * {
-        background: #3bbced;
+      #content div {
+        background: #333;
         padding: 30px;
       }
-    
-      header {
-        grid-column: 1 / 13;
+
+      .one{
+        grid-column: 1 / 3;
+        grid-row: 1 / 5;
       }
 
-      main {
-        grid-column: 4 / 13;
-        grid-row: 2 / 4;
+      .two{
+        grid-column: 3 / 7;
       }
 
-      aside {
-        grid-column: 1 / 4;
-      }
-
-      section {
-        grid-column: 1 / 13;
-        grid-row: 4 / 6;
-      }
-
-      nav {
-        grid-column: 1 / 4;
-      }
-
-      footer {
-        grid-column: 1 / 13;
-      }
-
-      
     </style>
   </head>
   <body>
-
-   
     <div id="content">
-       
-        <header>Header</header>
-        <main>Main</main>
-        <section>Section</section>
-        <aside>Aside</aside>
-        <nav>Nav</nav>
-        <footer>Footer</footer>
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
     </div>
 
   </body>
